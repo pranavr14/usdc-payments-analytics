@@ -9,6 +9,7 @@ A full-stack product analytics portfolio project for evaluating USDC payments ag
 - Simulated transaction dataset with explicit disclosure
 - Product experiment brief and user-facing data story
 - Responsible AI pattern: source label, human-review indicator, uncertainty disclosure, and safe fallback
+- Product case study with target users, hypotheses, validation questions, and experiment design
 
 ## Run locally
 
@@ -37,3 +38,7 @@ npm run dev
 The product hypothesis is that businesses will adopt USDC when they can see a clear advantage in cost and settlement speed. The next recommended experiment is a guided wallet-onboarding flow. Success metrics: wallet activation, first-payment conversion, completion time, support escalation rate, and payment success rate.
 
 All transaction data is simulated for research and portfolio demonstration; it is not financial advice or a production payment processor.
+
+## Product case study
+
+Read [`docs/PRODUCT_CASE_STUDY.md`](docs/PRODUCT_CASE_STUDY.md) for the product problem, MVP scope, user-validation plan, experiment design, responsible-AI approach, and limitations.
