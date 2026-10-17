@@ -37,4 +37,4 @@ const server = http.createServer(async (req, res) => {
   if (!file.startsWith(root)) return json(res, { error: 'Not found' }, 404);
   try { const content = await readFile(file); const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml' }; res.writeHead(200, { 'Content-Type': types[extname(file)] || 'text/plain' }); res.end(content); } catch { json(res, { error: 'Not found' }, 404); }
 });
-server.listen(port, '127.0.0.1', () => console.log(`USDC Analytics running at http://localhost:${port}`));
+server.listen(port, '0.0.0.0', () => console.log(`USDC Analytics running at http://localhost:${port}`));
